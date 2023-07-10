@@ -20,4 +20,4 @@ elif frase == "spathiphyllum":
     print ("Não, eu quero um grande Spathiphyllum!")
 
 else:
-    print ("Spathiphyllum! Not[input]!")
+    print ("Spathiphyllum! Not " + frase + "!")
