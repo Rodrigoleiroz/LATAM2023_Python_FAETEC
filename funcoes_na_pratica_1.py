@@ -10,18 +10,27 @@ def is_year_leap(year):
     
     if year < 1582:
         print("Não está dentro do período do calendário gregoriano")
+        return False
+        
   
     elif year % 4 != 0:
         print ( year, "é um ano comum!")
+        return False
+        
 
     elif year % 100 != 0:
         print ( year, "é um ano bissexto!") 
+        return True
+        
 
     elif year % 400 != 0:
         print ( year, "é um ano comum!") 
-
+        return False
+        
     else:
         print ( year, "é um ano bissexto!")
+        return True
+        
 
 # is_year_leap(int(input("Digite o ano que deseja consultar: ")))
     
